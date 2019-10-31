@@ -20,7 +20,7 @@ public class StudentController {
     }
 
     @RequestMapping("/saveStudent")
-    public String saveStudent(@ModelAttribute("student") Student student, ModelMap modelMap){
+    public String saveStudent(@ModelAttribute("student") Student student, ModelMap modelMap) {
         Student studentSaved = service.saveStudent(student);
         String msg = "Student saved with id: " + studentSaved.getId();
         modelMap.addAttribute("msg", msg);

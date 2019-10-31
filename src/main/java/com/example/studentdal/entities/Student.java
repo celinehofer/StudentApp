@@ -3,18 +3,18 @@ package com.example.studentdal.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name="studenttab")
+@Table(name = "studenttab")
 
 public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name="sname")
+    @Column(name = "sname")
     private String name;
-    @Column(name="scourse")
+    @Column(name = "scourse")
     private String course;
-    @Column(name="sfee")
+    @Column(name = "sfee")
     private Double fee;
 
     public Long getId() {
